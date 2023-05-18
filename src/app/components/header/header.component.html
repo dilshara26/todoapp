@@ -1,4 +1,4 @@
 <header>
     <h1>{{title}} </h1>
-    <app-button color="black" name="Add" (btnClick)="toggleFunc()"></app-button>
+    <app-button color="{{btnClicked ? 'red': 'green'}}" name="{{btnClicked ? 'Close': 'Add'}}" (btnClick)="toggleFunc()"></app-button>
 </header>

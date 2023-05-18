@@ -1,1 +1,2 @@
+<app-addto-todo (onFormSubmit)="addTask($event)"> </app-addto-todo>
 <app-task-item *ngFor="let task of tasks" [task]="task" (OnDeleteTask)="DeleteTask(task)" (OnReminderToggle)="onReminder(task)"> </app-task-item>
